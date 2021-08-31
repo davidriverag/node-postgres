@@ -1,0 +1,31 @@
+npm init -y
+npm i express
+crear archivo index.js     probar con el indexuser.js
+
+const express = require('express')
+const app = express()
+const port = 3000
+app.use(express.json());
+app.get('/', (req, res) => res.json({ message: 'Hello World' }))
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+
+agregar la linea      "start": " node index.js" al archivo package.json
+{
+"name": "my-project",
+"version": "1.0.0",
+"description": "",
+"main": "index.js",
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1",
+"start": " node index.js"
+},
+
+"keywords": [],
+"author": "",
+"license": "ISC"
+}
+
+
+npm i sequelize pg pg-hstore
+

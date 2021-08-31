@@ -1,0 +1,10 @@
+ng new pskapp
+cd pskapp
+ng serve --open
+npm -g install typescript
+
+new terminal
+cd skandia 
+code .
+
+
